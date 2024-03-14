@@ -1,3 +1,8 @@
+import formsPlugin from '@tailwindcss/forms'
+import tailwindcssTypographyPlugin from '@tailwindcss/typography'
+import tailwindcssAnimatePlugin from 'tailwindcss-animate'
+import debugScreensPlugin from 'tailwindcss-debug-screens'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
@@ -75,5 +80,10 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate')]
+  plugins: [
+    formsPlugin,
+    tailwindcssAnimatePlugin,
+    tailwindcssTypographyPlugin,
+    debugScreensPlugin
+  ]
 }
